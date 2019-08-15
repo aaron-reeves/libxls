@@ -7,6 +7,9 @@
   - Makefile may also need the following: ```MAKE=mingw32-make``` (replacing ```MAKE=make```).
   - ```configure.h``` file is not produced.  I modified a ```configure.h``` file from elsewhere, and put it in ```src```.  This is saved in the repository as ```config.h.win```, but needs to be renamed for building.
   -- With these changes, make works as expected.
-  - Library files and executables are built, but some poking around is required to find them.
-
+  - Library files and executables are built, but some poking around is required to find them:
+    - libxlsreader.a, libxlsreader.la, and libxlsreader.lai are created in the folder ```.lib``` (I prefer to move them to ```lib```)
+    - Executables are created in the root directory (I prefer to move them to ```bin```)
+    - Included headers all seem to be OK
+    
 
